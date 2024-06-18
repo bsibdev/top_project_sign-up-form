@@ -17,6 +17,11 @@ body {
 .form-container {
     display:flex;
     flex-direction:column;
+  
+}
+
+form {
+    background-color:white;
 }
 
 [alt="mars"] {
@@ -27,4 +32,47 @@ body {
 .hero {
     display:flex;
     background-color:rgba(rgb(0, 0, 0), green, blue, 1)
+}
+
+input:invalid {
+    outline:red solid 1px;
+    background-color:rgb(255, 209, 209);
+}
+
+input {
+    margin-bottom:10px;
+    appearance:none;
+    border-radius:3px;
+}
+
+input:hover {
+    background-color:lightgray;
+}
+
+input:valid {
+    background-color:rgb(222, 222, 255);
+}
+input:valid::after {
+    content:"✔️";
+}
+
+input:invalid::after {
+    content:"x";
+}
+
+li {
+    margin-bottom:10px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+label {
+    margin-right:10px;
+}
+
+button[type="submit"] {
+    margin:10px;
+    padding:15px 60px 15px 60px;
+    border-radius:5px;
 }
