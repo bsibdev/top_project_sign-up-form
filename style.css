@@ -10,10 +10,21 @@ body {
     background-size:cover;
     background-repeat:no-repeat;
     height:100vh;
-    background-position:center;
+    width:30%;
+    background-position:center; 
 }
 
 .form-container {
     display:flex;
     flex-direction:column;
+}
+
+[alt="mars"] {
+    width:50%;
+    height:auto;
+}
+
+.hero {
+    display:flex;
+    background-color:rgba(rgb(0, 0, 0), green, blue, 1)
 }
