@@ -1,0 +1,19 @@
+body {
+    display:flex;
+    background-color:rgb(254, 80, 80)
+}
+
+
+
+.img-container {
+    background:url(IMG/photobank-kiev-Opzk_hvwO9Q-unsplash.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    background-position:center;
+}
+
+.form-container {
+    display:flex;
+    flex-direction:column;
+}
