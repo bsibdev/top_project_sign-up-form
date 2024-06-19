@@ -1,9 +1,18 @@
-body {
-    display:flex;
-    background-color:rgb(254, 80, 80)
+* {
+    margin:0;
 }
 
+body {
+    display:flex;
+    --main-color:rgba(120,58,45);
+    --accent-color:rgb(199, 195, 189);
+    --text-color:white;
+    background-color: var(--accent-color);
+}
 
+ul p, label {
+    color:var(--text-color)
+}
 
 .img-container {
     background:url(IMG/photobank-kiev-Opzk_hvwO9Q-unsplash.jpg);
@@ -12,6 +21,14 @@ body {
     height:100vh;
     width:30%;
     background-position:center; 
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.hero {
+    margin-bottom:605px;
+    background-color:rgba(255,255,255,0.9);
 }
 
 .form-container {
@@ -21,17 +38,19 @@ body {
 }
 
 form {
-    background-color:white;
+    
 }
 
 [alt="mars"] {
-    width:50%;
+    width:90%;
     height:auto;
+    margin-right:10px;
 }
 
 .hero {
     display:flex;
-    background-color:rgba(rgb(0, 0, 0), green, blue, 1)
+    background-color:rgba(rgb(0, 0, 0), green, blue, 1);
+    padding:25px 100px 25px 100px;
 }
 
 input:invalid {
@@ -43,6 +62,8 @@ input {
     margin-bottom:10px;
     appearance:none;
     border-radius:3px;
+    margin-right:80px;
+    margin-top:5px;
 }
 
 input:hover {
@@ -69,10 +90,59 @@ li {
 
 label {
     margin-right:10px;
+    font-size:10px;
 }
 
 button[type="submit"] {
     margin:10px;
     padding:15px 60px 15px 60px;
-    border-radius:5px;
+    border-radius:10px;
+    background-color:var(--main-color);
+    margin-left:35px;
+    font-size:20px;
+    font-weight:bold;
+    color:var(--text-color);
+}
+
+.form-row {
+    display:flex;
+    flex-direction:column;
+}
+
+.form-container ul {
+    background-color:var(--main-color);
+    padding:20px;
+}
+
+.banner-message {
+    padding:50px 50px 10px 50px;
+    text-align:left;
+    font-weight: 550;
+    font-size:26px;
+}
+
+.banner-message span {
+    display:block;
+    margin-top:20px;
+}
+
+form>p {
+    margin-left:36px;
+}
+
+ul p {
+    font-weight:bold;
+    font-size:25px;
+}
+
+a {
+    text-decoration:none;
+    color:var(--text-color);
+    font-weight:bold;
+
+}
+
+p#attribution {
+    color:var(--text-color);
+    text-align:center;
 }

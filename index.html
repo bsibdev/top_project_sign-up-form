@@ -17,32 +17,45 @@
     </div>
     <div class="form-container">
         <section class="message-banner">
-            <p class="banner-message">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.<br>You know you want to.
+            <p class="banner-message">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.<br><span>You know you want to.</span>
             </p>
         </section>
         <form action="" method="">
-            <p>Let's do this!</p>
             <ul>
+                <p>Let's do this!</p>
                 <li>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" required pattern="[A-Za-z]">
+                    <div class="form-row">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" required pattern="[A-Za-z]">
+                    </div>
                 
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" required pattern="[A-Za-z]">
+                    <div class="form-row">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" required pattern="[A-Za-z]">
+                    </div
+                   >
                 </li>
                 <li>
-                    <label for="mail">EMAIL</label>
-                    <input type="email" id="mail" required pattern="[A-Za-z]\@[A-Za-Z]\.[A-Za-z]">
+                    <div class="form-row">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" id="mail" required pattern="[A-Za-z]\@[A-Za-Z]\.[A-Za-z]">
+                    </div>
                     
-                    <label for="phone-">PHONE NUMBER</label >
-                    <input type="tel" id="phone-num" required pattern="\d{10}">
+                    <div class="form-row">
+                        <label for="phone-">PHONE NUMBER</label >
+                        <input type="tel" id="phone-num" required pattern="\d{10}">
+                    </div>
                 </li>
                 <li>
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" id="pwd" required minlength="7">
+                    <div class="form-row">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" required minlength="7">
+                    </div>
                     
-                    <label for="pwd-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="pwd-confirm" required minlength="7">
+                    <div class="form-row">
+                        <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="pwd-confirm" required minlength="7">
+                    </div>
                 </li>
             </ul>
 
