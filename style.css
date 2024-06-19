@@ -24,6 +24,7 @@ ul p, label {
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
+    min-width:355px;
 }
 
 .hero {
@@ -31,26 +32,41 @@ ul p, label {
     background-color:rgba(255,255,255,0.9);
     max-height:300px;
     width:100%;
-}
-
-.form-container {
+    align-self:center;
     display:flex;
-    flex-direction:column;
-  
+    background-color:rgba(rgb(0, 0, 0), green, blue, 0.1);
+    padding:25px 0px 25px;
+    width:100%;
+    justify-content:center;
+    align-items: center;
+    gap:5px;
 }
 
 [alt="mars"] {
-    width:90%;
+    width:30%;
     height:auto;
     margin-right:10px;
 }
 
-.hero {
-    display:flex;
-    background-color:rgba(rgb(0, 0, 0), green, blue, 0.1);
-    padding:25px 100px 25px 100px;
-    width:30%;
+p#attribution {
+    color:var(--text-color);
+    text-align:center;
 }
+
+
+
+.form-container {
+    display:flex;
+    flex-direction:column;
+    min-width:355px;
+
+  
+}
+
+.hero h1 {
+    font-size:90px;
+}
+    
 
 input:invalid {
     outline:red solid 1px;
@@ -143,10 +159,7 @@ a {
 
 }
 
-p#attribution {
-    color:var(--text-color);
-    text-align:center;
-}
+
 
 form p a {
     font-weight:bold;
