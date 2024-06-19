@@ -255,6 +255,10 @@ input {
     margin-right:15px;
 }
 
+input:focus {
+    box-shadow:5px 5px 5px;
+}
+
 input:hover {
     background-color:lightgray;
 }
