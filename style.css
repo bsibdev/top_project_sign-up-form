@@ -29,16 +29,14 @@ ul p, label {
 .hero {
     margin-bottom:605px;
     background-color:rgba(255,255,255,0.9);
+    max-height:300px;
+    width:100%;
 }
 
 .form-container {
     display:flex;
     flex-direction:column;
   
-}
-
-form {
-    
 }
 
 [alt="mars"] {
@@ -49,8 +47,9 @@ form {
 
 .hero {
     display:flex;
-    background-color:rgba(rgb(0, 0, 0), green, blue, 1);
+    background-color:rgba(rgb(0, 0, 0), green, blue, 0.1);
     padding:25px 100px 25px 100px;
+    width:30%;
 }
 
 input:invalid {
@@ -112,6 +111,7 @@ button[type="submit"] {
 .form-container ul {
     background-color:var(--main-color);
     padding:20px;
+    box-shadow: black 0px 0px 10px;
 }
 
 .banner-message {
@@ -133,6 +133,7 @@ form>p {
 ul p {
     font-weight:bold;
     font-size:25px;
+    margin-bottom:15px;
 }
 
 a {
@@ -146,3 +147,9 @@ p#attribution {
     color:var(--text-color);
     text-align:center;
 }
+
+form p a {
+    font-weight:bold;
+    color:var(--main-color)
+}
+
