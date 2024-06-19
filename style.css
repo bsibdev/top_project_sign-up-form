@@ -257,6 +257,7 @@ input {
 
 input:focus {
     box-shadow:5px 5px 5px;
+    border-radius:7px;
 }
 
 input:hover {
