@@ -2,12 +2,165 @@
     margin:0;
 }
 
+@font-face {
+    font-family: 'intro_head_rbase';
+    src: url('fonts/rust-woff2/introheadr-base-webfont.woff2') format('woff2'),
+         url('fonts/rust-woff2/introheadr-base-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exobolditalic';
+    src: url('fonts/exo-wolf2-1/exo-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/exo-wolf2-1/exo-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exoextrabold';
+    src: url('fonts/exo-wolf2-1/exo-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/exo-wolf2-1/exo-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exoextrabolditalic';
+    src: url('fonts/exo-wolf2-1/exo-extrabolditalic-webfont.woff2') format('woff2'),
+         url('fonts/exo-wolf2-1/exo-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'exoextralight';
+    src: url('fonts/exo-wolf2-1/exo-extralight-webfont.woff2') format('woff2'),
+         url('fonts/exo-wolf2-1/exo-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'exoextralightitalic';
+    src: url('fonts/exo-wolf2-1/exo-extralightitalic-webfont.woff2') format('woff2'),
+         url('fonts/exo-wolf2-1/exo-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'exoitalic';
+    src: url('fonts/exo-wolf2-1/exo-italic-webfont.woff2') format('woff2'),
+         url('fonts/exo-wolf2-1/exo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'exolight';
+    src: url('fonts/exo-wolf2-1/exo-light-webfont.woff2') format('woff2'),
+         url('fonts/exo-wolf2-1/exo-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'exolightitalic';
+    src: url('fonts/exo-wolf2-1/exo-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/exo-wolf2-1/exo-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exomediumitalic';
+    src:url('./fonts/exo-wolf2-2exo-mediumitalic-webfont.woff2') format('woff2'),
+        url('./fonts/exo-wolf2-2exo-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exodemibold';
+    src:url('./fonts/exo-wolf2-2exo-semibold-webfont.woff2') format('woff2'),
+        url('./fonts/exo-wolf2-2exo-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exo-extrabold';
+    src:url('/fonts/exo/Exo-ExtraBold.otf') format('otf');
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+@font-face {
+    font-family: 'exodemibolditalic';
+    src:url('./fonts/exo-wolf2-2exo-semibolditalic-webfont.woff2') format('woff2'),
+        url('./fonts/exo-wolf2-2exo-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'exothin';
+    src:url('./fonts/exo-wolf2-2exo-thin-webfont.woff2') format('woff2'),
+        url('./fonts/exo-wolf2-2exo-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'exothinitalic';
+    src:url('./fonts/exo-wolf2-2exo-thinitalic-webfont.woff2') format('woff2'),
+        url('./fonts/exo-wolf2-2exo-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     display:flex;
     --main-color:rgba(120,58,45);
-    --accent-color:rgb(199, 195, 189);
+    --accent-color:rgb(226, 217, 205);
     --text-color:white;
+    --title-font:'intro_head_rbase';
     background-color: var(--accent-color);
+    font-family:'exo';
 }
 
 ul p, label {
@@ -28,13 +181,12 @@ ul p, label {
 }
 
 .hero {
-    margin-bottom:605px;
-    background-color:rgba(255,255,255,0.9);
+    
+    background-color:var(--accent-color);
     max-height:300px;
     width:100%;
     align-self:center;
     display:flex;
-    background-color:rgba(rgb(0, 0, 0), green, blue, 0.1);
     padding:25px 0px 25px;
     width:100%;
     justify-content:center;
@@ -48,6 +200,27 @@ ul p, label {
     margin-right:10px;
 }
 
+.hero h1 {
+    font-size:90px;
+    font-family:'exo';
+}
+
+.super-hero {
+    display:flex;
+    flex-direction:column;
+    justify-content: baseline;
+    margin-bottom:585px;
+    gap:20px;
+}
+
+.super-hero p {
+    text-align:center;
+    color: var(--main-color);
+    font-size:20px;
+    font-weight:italic;
+    padding-right:10px;
+}
+
 p#attribution {
     color:var(--text-color);
     text-align:center;
@@ -56,6 +229,7 @@ p#attribution {
 
 
 .form-container {
+    margin-top:100px;
     display:flex;
     flex-direction:column;
     min-width:355px;
@@ -63,8 +237,8 @@ p#attribution {
   
 }
 
-.hero h1 {
-    font-size:90px;
+.form-row {
+    margin-left:35px;
 }
     
 
@@ -77,8 +251,8 @@ input {
     margin-bottom:10px;
     appearance:none;
     border-radius:3px;
-    margin-right:80px;
     margin-top:5px;
+    margin-right:15px;
 }
 
 input:hover {
@@ -122,6 +296,7 @@ button[type="submit"] {
 .form-row {
     display:flex;
     flex-direction:column;
+    gap:
 }
 
 .form-container ul {
@@ -131,7 +306,7 @@ button[type="submit"] {
 }
 
 .banner-message {
-    padding:50px 50px 10px 50px;
+    padding:25px 50px 35px 50px;
     text-align:left;
     font-weight: 550;
     font-size:26px;
@@ -150,6 +325,7 @@ ul p {
     font-weight:bold;
     font-size:25px;
     margin-bottom:15px;
+    margin-left:35px;
 }
 
 a {
