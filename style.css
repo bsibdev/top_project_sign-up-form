@@ -298,6 +298,14 @@ button[type="submit"] {
     color:var(--text-color);
 }
 
+button[type="submit"]:hover {
+    background-color:rgb(114, 84, 77);
+}
+
+button[type="submit"]:active {
+    background-color:rgb(103, 44, 30);
+}
+
 .form-row {
     display:flex;
     flex-direction:column;
